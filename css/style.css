@@ -698,6 +698,11 @@ footer .container {
   margin-right: 10px;
 }
 
+.full-logo-footer
+/*.footer-social-link*/ {
+  display: block;
+}
+
 .bottom-part-signing {
   margin-left: 93px;
 }
@@ -928,27 +933,17 @@ footer .container {
   padding: 20px 24px;
 }
 
-/*========ICONS=======*/
+/*===============*/
 
-/*=======FOOTER========*/
-
-.full-logo-footer,
-/*.address-link,*/
-.footer-social-link {
-  display: block;
-}
-
-.join {
-  /*display: flex;*/
+/*.join {
+  display: flex;
   width: 206px;
 }
 
 .join-list {
   display: block;
   width: 206px;
-}
-
-/*=========CLIENTS========*/
+}*/
 
 /*=====BACKDROP======*/
 
