@@ -197,17 +197,6 @@ header .container {
 }
 
 /*=========HERO==========*/
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  color: var(--main-background-color);
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding-top: 200px;
-  margin-bottom: 30px;
-}
 
 .hero {
   /*width: 1600px;*/
@@ -222,11 +211,23 @@ h1 {
   background-color: var(--section-background-color);
 }
 
-.hero-button {
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--main-background-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 200px;
+  margin-bottom: 30px;
+}
+
+.hero__button {
   padding-bottom: 200px;
 }
 
-.hero-button-link {
+.hero__button-link {
   font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
@@ -252,19 +253,16 @@ h1 {
   box-sizing: border-box;
 }
 
-.features-icons-list {
+.features-list {
   display: flex;
   width: 1170px;
   margin: 0 auto;
 }
 
-.features-icons {
+.features-list__icons {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.features-icons {
   width: 270px;
   height: 120px;
   background-color: var(--button-background-color);
@@ -272,42 +270,38 @@ h1 {
   margin-right: 30px;
 }
 
-.icon-group {
+.features-list__icon-group {
   width: 65px;
   height: 70px;
 }
 
-.icon-clock,
-.icon-diagram {
+.features-list__icon-clock,
+.features-list__icon-diagram {
   width: 70px;
   height: 70px;
 }
 
-.icon-astronaut {
+.features-list__icon-astronaut {
   width: 55px;
   height: 60px;
 }
 
-.icon-instagram {
-  fill: #2f303a;
-}
-
-.details {
+.features-details {
   display: flex;
   width: 1170px;
   height: 101px;
   margin: 0 auto;
 }
 
-.details-items {
+.features-details__items {
   width: 270px;
 }
 
-.details-items:not(:last-child) {
+.features-details__items:not(:last-child) {
   margin-right: 30px;
 }
 
-.details h3 {
+.features-details__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -316,22 +310,13 @@ h1 {
   margin-bottom: 10px;
 }
 
-.details p {
+.features-details__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-
-/*.features-icons:last-child {
-  margin-right: 0;
-}*/
-
-/*.site .details {
-  display: flex;
-  justify-content: center;
-}*/
 
 /*====WHAT WE ARE DOING====*/
 
@@ -340,7 +325,7 @@ h1 {
   padding-top: 94px;
 }
 
-.doing {
+.activities-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -349,18 +334,18 @@ h1 {
   margin-bottom: 49px;
 }
 
-.whats-doing-img {
+.activities-list {
   display: flex;
   justify-content: space-between;
 }
 
-.whats-doing-item {
+.activities-list__item {
   position: relative;
 }
 
-.whats-doing-item .whats-doing-item-bgimg1,
-.whats-doing-item .whats-doing-item-bgimg2,
-.whats-doing-item .whats-doing-item-bgimg3 {
+.activities-list__item .activities-list__bgimg1,
+.activities-list__item .activities-list__bgimg2,
+.activities-list__item .activities-list__bgimg3 {
   position: absolute;
   bottom: 0px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -368,23 +353,27 @@ h1 {
 
 /*=======OUR TEAM=======*/
 
-h2 {
+.our-team-header/*h2*/ {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  /*margin-bottom: 49px;*/
 }
 
-.our-team {
+.team {
   background-color: var(--button-background-color);
   padding-bottom: 94px;
-  padding-top: 94px;
+  /*padding-top: 94px;*/
 }
 
-.our-team-header {
+/*.our-team-header {
   margin-bottom: 50px;
-}
+  padding-top: 94px;
+}*/
 
 .team h3 {
   font-weight: 500;
@@ -473,6 +462,9 @@ h2 {
   color: var(--title-text-color);
 }
 
+.icon-instagram {
+  fill: #2f303a;
+}
 /*===НАША КОМАНДА иконки====*/
 
 /*.social-list-box {
