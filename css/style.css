@@ -322,16 +322,18 @@ header .container {
 
 .activities .container {
   padding-bottom: 94px;
-  padding-top: 94px;
+  /*padding-top: 94px;*/
 }
 
-.activities-title {
+.activities__title {
+  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 49px;
+  padding-top: 94px;
 }
 
 .activities-list {
@@ -353,7 +355,14 @@ header .container {
 
 /*=======OUR TEAM=======*/
 
-.our-team-header/*h2*/ {
+.our-team {
+  background-color: var(--button-background-color);
+  padding-bottom: 94px;
+  /*padding-top: 94px;*/
+}
+
+.our-team__title {
+  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -361,73 +370,71 @@ header .container {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   padding-top: 94px;
-  /*margin-bottom: 49px;*/
 }
 
-.team {
-  background-color: var(--button-background-color);
-  padding-bottom: 94px;
-  /*padding-top: 94px;*/
-}
-
-/*.our-team-header {
-  margin-bottom: 50px;
-  padding-top: 94px;
-}*/
-
-.team h3 {
+.our-team__person .our-team__name {
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-.team {
+.our-team__list {
   display: flex;
   justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
 }
 
-.team li {
+.our-team__list .social-links__item /*li*/ {
   background: #ffffff;
 }
 
-.team-person-box {
+.our-team__person-box {
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team .team-person h3 {
+/*.our-team__list*/
+.our-team__person .our-team__name /*h3*/ {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.team .team-person p {
+.our-team__list .our-team__person {
   text-align: center;
 }
 
-.team-person-social-links {
+.our-team__person .our-team__career /*p*/ {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--title-text-color);
+}
+
+.our-team__social-links {
   margin-bottom: 30px;
   margin-top: 16px;
 }
 
-.team-person-iconlist {
+.social-links {
   display: flex;
   justify-content: space-between;
 }
 
-.team-person-iconlist:first-child {
+.social-links:first-child {
   padding-left: 32px;
 }
 
-.team-person-iconlist:last-child {
+.social-links:last-child {
   padding-right: 32px;
 }
 
-.team-person-svg {
+.social-links__icon {
   display: block;
   display: flex;
   justify-content: center;
@@ -440,48 +447,47 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-person-svg:hover {
+.social-links__icon:hover {
   background-color: var(--accent-text-color);
 }
 
-.team-icons {
+.social-links__svg {
   fill: var(--icon-pasive-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icons:hover {
+.social-links__svg:hover {
   fill: var(--main-background-color);
 }
 
-.team p {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--title-text-color);
-}
-
-.icon-instagram {
-  fill: #2f303a;
-}
-/*===НАША КОМАНДА иконки====*/
-
-/*.social-list-box {
-  width: 206px;
-  margin: 0 auto;
-  margin-top: 16px;
-  margin-bottom: 30px;
-}*/
-
 /*====CLIENTS====*/
 
+/*h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  margin-bottom: 49px;
+}*/
+
 .clients .container {
-  margin-top: 94px;
+  /*margin-top: 94px;*/
   margin-bottom: 94px;
 }
 
-.clients-title {
+.clients__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -490,7 +496,7 @@ header .container {
   justify-content: space-between;
 }
 
-.clients-list-box {
+.clients-list__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,76 +511,61 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-box:hover {
+.clients-list__box:hover {
   border: 1px solid var(--accent-text-color);
 }
 
-.clients-list-logo1 {
+.clients-list__logo1 {
   width: 45px;
   height: 50px;
   fill: var(--icon-pasive-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo2 {
+.clients-list__logo2 {
   width: 40px;
   height: 52px;
   fill: var(--icon-pasive-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo3 {
+.clients-list__logo3 {
   width: 41px;
   height: 43px;
   fill: var(--icon-pasive-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo4 {
+.clients-list__logo4 {
   width: 80px;
   height: 42px;
   fill: var(--icon-pasive-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo5 {
+.clients-list__logo5 {
   width: 59px;
   height: 47px;
   fill: var(--icon-pasive-color);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo6 {
+.clients-list__logo6 {
   width: 88px;
   height: 45px;
   fill: var(--icon-pasive-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-logo1:hover,
-.clients-list-logo2:hover,
-.clients-list-logo3:hover,
-.clients-list-logo4:hover,
-.clients-list-logo5:hover,
-.clients-list-logo6:hover {
+.clients-list__logo1:hover,
+.clients-list__logo2:hover,
+.clients-list__logo3:hover,
+.clients-list__logo4:hover,
+.clients-list__logo5:hover,
+.clients-list__logo6:hover {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
