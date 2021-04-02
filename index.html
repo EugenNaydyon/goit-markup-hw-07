@@ -20,7 +20,7 @@
             <nav class="navigation">
                 <a href="./index.html" lang="en" class="logo"><span class="logo__web">Web</span>Studio</a>
                 <ul class="navigation-menu list">
-                    <li class="navigation-menu__item underline">
+                    <li class="navigation-menu__item">
                         <a href="./index.html" class="navigation-menu__link current">Студия</a>
                     </li>
                     <li class="navigation-menu__item">
@@ -358,73 +358,72 @@
             </div>
         </section>
     </main>
-    <footer>
-            <div class="container bottom-part">
-                <div class="bottom-part-logo">
-                        <a href="./index.html" lang="en" class="full-logo-footer"><span class="web-logo">Web</span>Studio</a>
-                    <address>
-                        <ul class="footer-contact list">
-                            <li class="address-item">
+    <footer class="footer">
+            <div class="container footer-box">
+                <div class="contacts-box">
+                        <a href="./index.html" lang="en" class="logo-footer"><span class="logo-footer__web">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address-contacts list">
+                            <li class="address-contacts__item">
                                 <a href="https://goo.gl/maps/LRv18BWCtSfgLsTC7" target="_blank" rel="noopener noreferrer"
-                                class="address-footer">г. Киев пр-т Леси Украинки, 26</a>
+                                class="address-contacts__office">г. Киев пр-т Леси Украинки, 26</a>
                             </li>
-                            <li class="address-item">
-                                <a href="mailto:info@example.com" lang="en" class="address-link">info@example.com</a>
+                            <li class="address-contacts__item">
+                                <a href="mailto:info@example.com" lang="en" class="address-contacts__link">info@example.com</a>
                             </li>
-                            <li class="address-item">
-                                <a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a>
+                            <li class="address-contacts__item">
+                                <a href="tel:+380991111111" class="address-contacts__link">+38 099 111 11 11</a>
                             </li>
                         </ul>
                     </address>
                 </div>
-                <div class="bottom-part-icons">
-                    <p class="join-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                    <ul class="footer-team-person-iconlist list">
-                        <li class="footer-icon">
-                            <a href="#" class="footer-svg">
-                                <svg class="footer-icons" width=20px height=20px>
+                <div class="social-links-box">
+                    <p class="social-links-box__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="social-links-dark list">
+                        <li class="social-links-dark__item">
+                            <a href="#" class="social-links-dark__link">
+                                <svg class="social-links-dark__icon" width=20px height=20px>
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-icon">
-                            <a href="#" class="footer-svg">
-                                <svg class="footer-icons" width=20px height=20px>
+                        <li class="social-links-dark__item">
+                            <a href="#" class="social-links-dark__link">
+                                <svg class="social-links-dark__icon" width=20px height=20px>
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-icon">
-                            <a href="#" class="footer-svg">
-                                <svg class="footer-icons" width=20px height=20px>
+                        <li class="social-links-dark__item">
+                            <a href="#" class="social-links-dark__link">
+                                <svg class="social-links-dark__icon" width=20px height=20px>
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer-icon">
-                            <a href="#" class="footer-svg">
-                                <svg class="footer-icons" width=20px height=20px>
+                        <li class="social-links-dark__item">
+                            <a href="#" class="social-links-dark__link">
+                                <svg class="social-links-dark__icon" width=20px height=20px>
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>    
                     </ul>
                 </div>
-                <div class="bottom-part-signing">
-                    <p class="signing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+                <div class="signing-box">
+                    <p class="signing-box__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                     <form action="#" class="signing-form">
-                        <input type="email" name="user-name" class="signing-form-email" placeholder="E-mail" required autocomplete="off">
-                        <div class="signing-form-box">
-                            <button type="submit" class="signing-form-btn">
-                                <span class="signing-text">Подписаться
-                                    <svg class="signing-form-icon" width=24px height=24px>
+                        <input type="email" name="user-name" class="signing-form__email" placeholder="E-mail" required autocomplete="off">
+                        <div class="signing-form__box">
+                            <button type="submit" class="signing-form__btn">
+                                <span class="signing-form__text">Подписаться
+                                    <svg class="signing-form__icon" width=24px height=24px>
                                     <use href="./images/icons.svg#icon-icon-send"></use>
                                 </svg>
                             </span>
                                 
                             </button>
-                        </div>
-                        
+                        </div> 
                     </form>
                 </div>
         </div>
@@ -475,7 +474,7 @@
                     <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                 </label>
                 <input type="checkbox" name="user-checkbox" id="user-term" class="modal-form-checkbox visually-hidden">
-                <label for="user-term" class="modal-form-ckbox-description">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="contract-description">Условия договора</a></label>
+                <label for="user-term" class="modal-form-ckbox-description">Соглашаюсь с рассылкой и принимаю&nbsp<a href="" class="contract-description">Условия договора</a></label>
                 <button type="submit" class="modal-form-btn-submit">Отправить</button>
             </form>
         </div>
