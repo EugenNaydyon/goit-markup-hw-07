@@ -1056,7 +1056,7 @@ body {
   color: #757575;
 }
 
-.modal-form-ckbox-description::before {
+.modal-form__ckbox-description::before {
   display: block;
   /*display: flex;*/
   content: "";
@@ -1067,8 +1067,6 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
   margin-right: 8px;
-  /*align-items: center;
-  justify-content: center;*/
 }
 
 .modal-form__checkbox:checked + .modal-form__ckbox-description::before {
@@ -1078,7 +1076,7 @@ body {
 
 .modal-form__ckbox-description {
   display: flex;
-  align-items: center;
+  justify-content: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -1111,7 +1109,7 @@ body {
   margin-top: 30px;
 }
 
-.contract-description {
+.modal-form__contract-description {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
