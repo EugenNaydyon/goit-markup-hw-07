@@ -85,13 +85,13 @@
   &:focus {
     outline: none;
     border-color: #2196f3;
-  }
-}
 
-.modal-form__input:focus + .modal-form__icon-email,
-.modal-form__input:focus + .modal-form__icon-name,
-.modal-form__input:focus + .modal-form__icon-tel {
-  fill: #2196f3;
+    & + .modal-form__icon-email,
+    & + .modal-form__icon-name,
+    & + .modal-form__icon-tel {
+      fill: #2196f3;
+    }
+  }
 }
 
 .modal-form__icon-name,

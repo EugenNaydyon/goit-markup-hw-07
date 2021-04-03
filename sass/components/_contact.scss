@@ -1,3 +1,8 @@
+.contact-menu {
+  display: flex;
+  margin-left: auto;
+}
+
 .contact-menu__tel {
   margin-left: 10px;
 }
@@ -26,11 +31,6 @@
   line-height: 1.2;
   color: var(--title-text-color);
   text-decoration: none;
-}
-
-.contact-menu {
-  display: flex;
-  margin-left: auto;
 }
 
 .contact-menu__link {
