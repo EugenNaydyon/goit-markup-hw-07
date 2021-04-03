@@ -45,10 +45,10 @@
 
 .features-details__items {
   width: 270px;
-}
 
-.features-details__items:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-details__title {

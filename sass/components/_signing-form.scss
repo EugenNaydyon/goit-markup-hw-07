@@ -22,22 +22,22 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-}
 
-.signing-form__email::placeholder {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 
-.signing-form__email:focus {
-  outline: none;
-  border-color: #2196f3;
+  &:focus {
+    outline: none;
+    border-color: #2196f3;
+  }
 }
 
 .signing-form__box {
