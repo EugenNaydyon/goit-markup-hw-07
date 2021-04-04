@@ -1,6 +1,7 @@
 .social-links {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-spacebetween;
+  /*display: flex;
+  justify-content: space-between;*/
 
   &:first-child {
     padding-left: 32px;

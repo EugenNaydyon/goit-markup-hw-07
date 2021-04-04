@@ -37,8 +37,7 @@
 }
 
 .our-team__list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-spacebetween;
   width: 1170px;
   margin: 0 auto;
 

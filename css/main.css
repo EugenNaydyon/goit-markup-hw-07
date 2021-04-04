@@ -1,3 +1,13 @@
+.clients-list__logo1, .clients-list__logo2, .clients-list__logo3, .clients-list__logo4, .clients-list__logo5, .clients-list__logo6 {
+  fill: var(--icon-pasive-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links, .signing-form__text, .activities-list, .our-team__list, .clients-list, .portfolio-box {
+  display: flex;
+  justify-content: space-between;
+}
+
 :root {
   --primery-text-color: #212121;
   --title-text-color: #757575;
@@ -91,8 +101,8 @@ body {
 }
 
 .social-links {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 
 .social-links:first-child {
@@ -242,8 +252,7 @@ body {
   background-color: var(--accent-text-color);
 }
 
-.navigation-menu__item.navigation-menu__item--portfolio
-.navigation-menu__link.current::after {
+.navigation-menu__item.navigation-menu__item--portfolio .navigation-menu__link.current::after {
   display: block;
   position: relative;
   top: 28px;
@@ -333,15 +342,19 @@ body {
 }
 
 .signing-form__text {
-  display: flex;
+  /*display: flex;
+  justify-content: space-between;*/
   margin-left: 28px;
   margin-right: 29px;
-  justify-content: space-between;
   align-items: center;
 }
 
 .signing-form__icon {
   display: inline-block;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header,
@@ -486,8 +499,8 @@ body {
 }
 
 .activities-list {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 
 .activities-list__item {
@@ -541,8 +554,6 @@ body {
 }
 
 .our-team__list {
-  display: flex;
-  justify-content: space-between;
   width: 1170px;
   margin: 0 auto;
 }
@@ -578,8 +589,8 @@ body {
 }
 
 .clients-list {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 
 .clients-list__box {
@@ -601,43 +612,31 @@ body {
 .clients-list__logo1 {
   width: 45px;
   height: 50px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo2 {
   width: 40px;
   height: 52px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo3 {
   width: 41px;
   height: 43px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo4 {
   width: 80px;
   height: 42px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo5 {
   width: 59px;
   height: 47px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo6 {
   width: 88px;
   height: 45px;
-  fill: var(--icon-pasive-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__logo1:hover,
@@ -768,9 +767,7 @@ body {
 }
 
 .portfolio-box {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .portfolio-box .portfolio-box__title {
@@ -1001,12 +998,10 @@ body {
 
 .modal-form__ckbox-description::before {
   display: block;
-  /*display: flex;*/
   content: "";
   width: 16px;
   height: 15px;
   background-image: url("../images/icon-ckeck-start.svg");
-  /*outline: #212121 1px solid;*/
   background-repeat: no-repeat;
   cursor: pointer;
   margin-right: 8px;

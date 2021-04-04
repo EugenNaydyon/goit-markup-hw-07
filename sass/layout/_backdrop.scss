@@ -158,12 +158,10 @@
 
   &::before {
     display: block;
-    /*display: flex;*/
     content: "";
     width: 16px;
     height: 15px;
     background-image: url("../images/icon-ckeck-start.svg");
-    /*outline: #212121 1px solid;*/
     background-repeat: no-repeat;
     cursor: pointer;
     margin-right: 8px;

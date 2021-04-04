@@ -14,8 +14,9 @@
 }
 
 .activities-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-spacebetween;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 
 .activities-list__item {
